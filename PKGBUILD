@@ -1,7 +1,7 @@
 pkgname=logdna-agent
 pkgver=0.0.1
 pkgrel=1
-pkgdesc="A top-like tool for monitoring an Erlang node"
+pkgdesc="Real-time log aggregation, monitoring, and analysis from any platform, at any volume."
 arch=('x86_64')
 url="https://github.com/logdna/logdna-agent/"
 license=('MIT')
