@@ -30,7 +30,7 @@ package () {
 node /usr/lib/node_modules/logdna-agent/index.js \"\$@\"
 " >> "$pkgdir/usr/bin/logdna-agent"
   chmod +x "$pkgdir/usr/bin/logdna-agent"
-  install -Dm644 logdna-agent.service "$pkgdir/usr/lib/systemd/user/logdna-agent.service"
+  install -Dm644 logdna-agent.service "$pkgdir/usr/lib/systemd/system/logdna-agent.service"
 
 }
 
