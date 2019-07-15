@@ -7,8 +7,8 @@ url="https://github.com/logdna/logdna-agent/"
 license=('MIT')
 makedepends=('npm')
 provides=('logdna-agent')
-source=('git://github.com/logdna/logdna-agent/')
-md5sums=('SKIP')
+source=('git://github.com/logdna/logdna-agent/' 'logdna-agent.service')
+md5sums=('SKIP' '4db89d67fb6bdcd1a2b1a70b0323f331')
 
 
 package () {
@@ -30,6 +30,8 @@ package () {
 node /usr/lib/node_modules/logdna-agent/index.js \"\$@\"
 " >> "$pkgdir/usr/bin/logdna-agent"
   chmod +x "$pkgdir/usr/bin/logdna-agent"
+  install -Dm644 logdna-agent.service "$pkgdir/usr/lib/systemd/user/logdna-agent.service"
+
 }
 
 # vim:set ts=2 sw=2 et:

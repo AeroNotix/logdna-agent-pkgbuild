@@ -1,0 +1,10 @@
+[Unit]
+Description=Real-time log aggregation, monitoring, and analysis from any platform, at any volume.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/logdna-agent
+Restart=always
+
+[Install]
+WantedBy=default.target
