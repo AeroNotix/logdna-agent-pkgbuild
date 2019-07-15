@@ -27,7 +27,7 @@ package () {
   mkdir -p $pkgdir/usr/bin/
   echo "#!/bin/sh
 
-node /usr/lib/node_modules/logdna-agent/index.js \"$@\"
+node /usr/lib/node_modules/logdna-agent/index.js \"\$@\"
 " >> "$pkgdir/usr/bin/logdna-agent"
   chmod +x "$pkgdir/usr/bin/logdna-agent"
 }
