@@ -1,0 +1,4 @@
+logdna-agent/**
+*.xz
+src/**
+pkg/**
